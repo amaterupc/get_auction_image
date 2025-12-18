@@ -1,25 +1,33 @@
 # Yahoo Auction Image Downloader
 
-A simple Python script to download images from a Yahoo Japan Auction page.
+A tool to download images from a Yahoo Japan Auction page.
 
-## Requirements
+## Usage (Recommended)
+
+Using the shell script will automatically set up the Python virtual environment and run the script.
+
+```bash
+./get_auction_image.sh <Yahoo Auction URL>
+```
+
+Images will be saved in the `yahoo_images` folder.
+
+## Running Directly
+
+### Requirements
 
 - Python 3.x
 - `requests`
 - `beautifulsoup4`
 
-## Installation
+### Setup
 
 ```bash
 pip install requests beautifulsoup4
 ```
 
-## Usage
-
-Edit the `url` variable in `get_auction_image.py` to the auction page you want to download images from, then run:
+### Execution
 
 ```bash
-python get_auction_image.py
+python get_auction_image.py <Yahoo Auction URL>
 ```
-
-The images will be saved in a folder named `yahoo_images`.

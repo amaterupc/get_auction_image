@@ -1,31 +1,36 @@
 # ヤフオク画像ダウンローダー
 
-ヤフオクの商品ページから画像を自動でダウンロードするためのPythonスクリプトです。
+ヤフオクの商品ページから画像を自動でダウンロードするためのツールです。
 
-## 必要条件
+## 使い方（推奨）
+
+シェルスクリプトを使用すると、Python仮想環境のセットアップと実行を自動で行います。
+
+```bash
+./get_auction_image.sh <ヤフオク商品ページのURL>
+```
+
+画像は `yahoo_images` フォルダ内に保存されます。
+
+## 直接実行する場合
+
+### 必要条件
 
 - Python 3.x
 - `requests`
 - `beautifulsoup4`
 
-## インストール
-
-必要なライブラリをインストールしてください：
+### セットアップ
 
 ```bash
 pip install requests beautifulsoup4
 ```
 
-## 使い方
-
-1. `get_auction_image.py` 内の `url` 変数をダウンロードしたいオークションページのURLに書き換えます。
-2. スクリプトを実行します：
+### 実行
 
 ```bash
-python get_auction_image.py
+python get_auction_image.py <ヤフオク商品ページのURL>
 ```
-
-画像は `yahoo_images` フォルダ内に保存されます。
 
 ## 英語版 (English version)
 
