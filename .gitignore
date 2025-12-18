@@ -1,0 +1,4 @@
+.DS_Store
+yahoo_images/
+__pycache__/
+*.pyc
