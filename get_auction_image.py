@@ -2,9 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.parse
 import os
+import sys
+
+# Check if URL is provided
+if len(sys.argv) != 2:
+    print("Usage: python3 get_auction_image.py <URL>")
+    sys.exit(1)
 
 # URL of the page
-url = "https://page.auctions.yahoo.co.jp/jp/auction/o1146778518"
+url = sys.argv[1]
 
 # Send a GET request to the page
 response = requests.get(url)
